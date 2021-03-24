@@ -1,0 +1,115 @@
+@import url('https://fonts.google.com/specimen/Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --clr-Darkcyan:hsl(185, 75%, 39%);
+    --clr-Darkblue: hsl(229, 23%, 23%);
+    --clr-Darkgrayishblue: hsl(227, 10%, 46%);
+    --clr-darkgray:hsl(0, 0%, 59%);
+    --ff:'Kumbh Sans', sans-serif;
+    --fw-reg:400;
+    --fw-bold:700;
+}
+
+body{
+display: flex;
+justify-content:center;
+align-items: center;  
+font-size: 1.125rem;
+background-color: var(--clr-Darkcyan);
+position: relative;
+height: 100vh;
+overflow: hidden;
+}
+
+
+.bg-pattern-top{
+    position:fixed;
+    top:-70em;
+    left:-50em;
+    border: 0;
+    z-index: -1;
+}
+
+.bg-pattern-bottom{
+    position:fixed;
+    bottom: -30em;
+    right: -55em;
+    border: 0;
+    z-index: -1;
+}
+.card{
+    width: 25em;
+    background-color: white;
+    border-radius: 0.625em;
+    box-shadow: 1.25em 1.25em 1.25em rgba(0,0,0,0.1);
+    margin: 0.625em;
+}
+.top{
+background-image: url('../images/bg-pattern-card.svg');
+height: 9em;
+margin-bottom: 3.5em;
+position: relative;
+border-top-right-radius: 0.625em;
+border-top-left-radius: 0.625em;
+}
+img{
+    position:absolute;
+    margin: auto;
+    position: absolute;
+    left: 0; 
+    bottom: -32%; 
+    right: 0;
+    border-radius: 50%;
+    border: 5px solid white;
+    }
+.middle{
+    text-align: center;  
+}
+
+.middle h2{
+font-family: var(--ff);
+font-weight: var(--fw-bold);
+color: var(--clr-Darkblue);
+margin-bottom: 0.325em;
+}
+.middle h2 span{
+font-family: var(--ff);
+font-weight: var(--fw-reg);
+color: var(--clr-darkgray);
+}
+
+.middle p{
+font-family: var(--ff);
+font-weight: var(--fw-reg);
+color: var(--clr-darkgray);
+margin-bottom: 2em;
+}
+.bottom{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-size: 1.25rem;
+    font-family: var(--ff);
+    font-weight: var(--fw-bold);
+    color: var(--clr-Darkblue);
+    margin:auto;
+    padding:1em;
+    border-top:  0.011px solid rgba(0,0,0,0.1);
+}
+.div-likes{
+    line-height: 1.25em;
+    font-family: var(--ff);
+}
+.bottom p{
+    font-size: 1rem;
+    font-family: var(--ff);
+    font-weight: var(--fw-reg);
+    color: var(--clr-darkgray);
+}
